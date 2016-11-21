@@ -8,9 +8,9 @@ public class BeatBox {
     JPanel mainPanel;
     ArrayList<JCheckBox> checkboxList;
     JFrame theFrame;
-    String[] instrumentNames = {"Bass Drum", "Closed Hi-Hat",
+    String[] instrumentNames = {"Brass", "Shut Hi-Hat",
             "Open Hi-Hat", "Acoustic Snare", "Crash Cymbal", "Hand Clap",
-            "High Tom", "Hi Bongo", "Maracas", "Whistle", "Low Conga",
+            "High Tom", "Hi Bongo", "Maracas", "Shreik", "Low Conga",
             "Cowbell", "Vibraslap", "Low-mid Tom", "High Agogo",
             "Open Hi Conga"};
 
