@@ -28,10 +28,10 @@ public class BeatBoxFinalUltimate_UserNameFormPending {  // implements MetaEvent
     Track track;
     JFrame theFrame;
 
-    String[] instrumentNames = {"Bass Drum", "Closed Hi-Hat",
-            "Open Hi-Hat","Acoustic Snare", "Crash Cymbal", "Hand Clap",
+    String[] instrumentNames = {"Bass Drum", "Closed Hi Hat",
+            "Open Hi Hat","Acoustic Snare", "Crash Cymbal", "Hand Clap",
             "High Tom", "Hi Bongo", "Maracas", "Whistle", "Low Conga",
-            "Cowbell", "Vibraslap", "Low-mid Tom", "High Agogo",
+            "Cowbell", "Vibras lap", "Low mid Tom", "High Agogo",
             "Open Hi Conga"};
     int[] instruments = {35,42,46,38,49,39,50,60,70,72,64,56,58,47,67,63};
 
@@ -51,7 +51,7 @@ public class BeatBoxFinalUltimate_UserNameFormPending {  // implements MetaEvent
             remote.start();
         }
         catch (Exception ex) {
-            System.out.println("couldn't connect - you'll have to play alone.");
+            System.out.println("Couldn't Connect! You'll have to play alone.");
         }
         setUpMidi();
         buildGUI();
@@ -84,7 +84,7 @@ public class BeatBoxFinalUltimate_UserNameFormPending {  // implements MetaEvent
         downTempo.addActionListener(new MyDownTempoListener());
         buttonBox.add(downTempo);
 
-        JButton sendIt = new JButton("sendIt");
+        JButton sendIt = new JButton("Send It");
         sendIt.addActionListener(new MySendListener());
         buttonBox.add(sendIt);
 
@@ -252,7 +252,7 @@ public class BeatBoxFinalUltimate_UserNameFormPending {  // implements MetaEvent
         public void actionPerformed(ActionEvent a) {
             // read in the thing
 
-            String name=JOptionPane.showInputDialog("Enter name of Sequence to be restored:");
+            String name=JOptionPane.showInputDialog("Enter Name of Sequence to be Restored:");
 
             boolean[] checkboxState = null;
             try {
@@ -338,7 +338,7 @@ public class BeatBoxFinalUltimate_UserNameFormPending {  // implements MetaEvent
         public void run() {
             try {
                 while ((obj=in.readObject()) != null) {
-                    System.out.println("got an object from server");
+                    System.out.println("Got an Object from Server");
                     System.out.println(obj.getClass());
                     String nameToShow = (String) obj;
                     checkboxState = (boolean[]) in.readObject();
