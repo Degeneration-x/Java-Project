@@ -44,7 +44,7 @@ public class BeatBoxFinalUltimate_UserNameFormPending {  // implements MetaEvent
     public void startUp(String name) {
         userName = name;
         try {
-            Socket sock = new Socket("127.0.0.1", 4242);
+            Socket sock = new Socket("10.6.1.201", 4242);
             out = new ObjectOutputStream(sock.getOutputStream());
             in = new ObjectInputStream(sock.getInputStream());
             Thread remote = new Thread(new RemoteReader());
